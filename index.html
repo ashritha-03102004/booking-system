@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PocketClass Booking System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Booking System</h1>
+        <div id="instructor-interface">
+            <h2>Instructor Interface</h2>
+            <div id="set-availability">
+                <h3>Set Availability</h3>
+                <input type="date" id="availability-date">
+                <input type="time" id="availability-time">
+                <button onclick="setAvailability()">Set Availability</button>
+            </div>
+            <div id="view-availability">
+                <h3>View Availability</h3>
+                <ul id="availability-list"></ul>
+            </div>
+            <div id="view-bookings">
+                <h3>Upcoming Bookings</h3>
+                <ul id="booking-list"></ul>
+            </div>
+        </div>
+        <div id="student-interface">
+            <h2>Student Interface</h2>
+            <div id="view-slots">
+                <h3>View Available Slots</h3>
+                <ul id="slots-list"></ul>
+            </div>
+            <div id="book-slot">
+                <h3>Book a Slot</h3>
+                <input type="date" id="booking-date">
+                <input type="time" id="booking-time">
+                <button onclick="bookSlot()">Book Slot</button>
+                <p id="confirmation"></p>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
